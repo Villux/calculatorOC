@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Calculator.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *calculatorLabel;
+@property Calculator *calculator;
+@property (weak, nonatomic) IBOutlet UIButton *commaButton;
+
+- (void) updateLabelText;
 
 @end
 
